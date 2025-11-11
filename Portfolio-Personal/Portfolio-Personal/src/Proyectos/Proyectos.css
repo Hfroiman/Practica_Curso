@@ -1,0 +1,21 @@
+.Proyectos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Proyectos-main{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 1550px;
+    width: 1400px;
+    background-color: rgb(166, 166, 168);
+}
+.section-titulo{
+    margin-bottom: 30px;
+}
+.section-text{
+    margin-bottom: 60px;
+}

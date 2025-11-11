@@ -1,0 +1,12 @@
+.groupcard{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.cards{
+    background-color: aqua;
+    height: 1550px;
+    width: 1400px;
+}

@@ -9,9 +9,9 @@ export default class Usermanager{
     async GetUsers(){
         try{
             if(fs.existsSync(this.path)){
-                const users = await  fs.promises.readFile(this.path, 'utf8');
+                const users = await fs.promises.readFile(this.path, 'utf8');
                 return JSON.parse(users);
-            }else return [];
+            }else return console.log;
         }catch(error){
             console.log(error);
         }

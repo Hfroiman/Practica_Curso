@@ -1,7 +1,7 @@
 import express from 'express'
 import Usermanager from './manager/usermanager.js';
 
-const usermanager = new Usermanager('./users.json');
+const usermanager = new Usermanager('./user.json');
 const app = express();
 app.use(express.json());
 
@@ -48,5 +48,4 @@ app.put('/users/:iduser', async (req, res)=>{
 })
 
 const PORT = 8080;
-
 app.listen(PORT, () => console.log('Server ok on port'));
