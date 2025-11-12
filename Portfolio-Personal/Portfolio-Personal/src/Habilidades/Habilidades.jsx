@@ -4,7 +4,8 @@ import './habilidades.css'
 
 const Habilidades = () => {
   return (
-    <div>
+    <div className='habilidades'>
+      <h1>Habilidades tecnicas</h1>
       <CardHabilidades></CardHabilidades>
     </div>
   )

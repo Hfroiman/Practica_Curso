@@ -1,0 +1,15 @@
+.contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 300px;
+    width: auto;
+}
+
+.media{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+}
