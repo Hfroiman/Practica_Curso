@@ -5,10 +5,11 @@ import Proyectos from './Proyectos/Proyectos.jsx'
 import Habilidades from './Habilidades/Habilidades.jsx'
 import Contacto from './Contacto/Contacto.jsx'
 import Footer from './Footer/Footer.jsx'
+import './app.css'
 
 const App = () => {
   return (
-    <div>
+    <div className='app'>
       <Header></Header>
       <Body></Body>
       <Proyectos></Proyectos>

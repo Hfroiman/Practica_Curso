@@ -1,4 +1,4 @@
-.groupcard{
+.groupcard {
     height: 600px;
     width: 1400px;
     display: flex;
@@ -8,12 +8,25 @@
     flex-wrap: wrap;
 }
 
-.groupcard .card{
+.groupcard .card {
     width: 20rem;
 }
 
-.groupcard .card-body{
+.groupcard .card-body {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.card-title{
+    font-size: 25px;
+}
+
+.card-body p {
+    font-family: "Merriweather", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-variation-settings:
+        "width" 100;
 }

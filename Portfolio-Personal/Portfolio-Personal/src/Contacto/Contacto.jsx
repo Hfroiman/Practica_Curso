@@ -5,10 +5,10 @@ const Contacto = () => {
   return (
     <div className='contact'>
         <h2>Gracias por haber visitado mi portafolio</h2>
-        <h6>Si crees que mi perfil puede encajar en tu equipo, estaré encantado de conversar.</h6>
+        <p>Si crees que mi perfil puede encajar en tu equipo, estaré encantado de conversar.</p>
         <section className='media'>
             <a>Email</a>
-            <a>Ver CV</a>
+            <a>VerCV</a>
             <a>Linkedln</a>
             <a>GitHub</a>
         </section>

@@ -1,5 +1,5 @@
 .body{
-    background-color: rgb(121, 121, 121);
+    background-color: #1b263b;
     display: flex;
     justify-content: center;
 }
@@ -11,9 +11,71 @@
     justify-content: center;
     height: 910px;
     width: 1400px;
-    background-color: rgb(99, 99, 194);
+    background-color: #1b263b;
 }
 
+.body .titulo{
+  animation: fadeInOut 3s infinite;
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 85px;
+  color: rgb(240, 248, 255);
+}
+
+@keyframes fadeInOut {
+  0% { opacity: 0; }
+  50% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+
 .body-text{
-    width: 45rem;
+    width: 80%;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight:700;
+    font-style: normal;
+    font-size: 20px;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    color: rgba(240, 248, 255, 0.733);
+}
+
+.body-btn1{
+    border: 4px solid #45678b;
+    background-color:springgreen;
+    transition: 0.3s ease;
+    border-radius: 500px;
+    width: 140px;
+    height: 65px;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight:700;
+    font-style: normal;
+    
+}
+.body-btn1:hover {
+  box-shadow: 0 4px 15px rgba(0,0,0,0.25);
+  background-color: #107c30;;
+  transform: translateY(-3px);
+  border: 4px solid #107c30;
+}
+
+.body-btn2{
+    border: 4px solid #45678b;
+    background-color:springgreen;
+    transition: 0.3s ease;
+    border-radius: 500px;
+    width: 140px;
+    height: 65px;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight:700;
+    font-style: normal;
+}
+.body-btn2:hover {
+  box-shadow: 0 4px 15px rgba(0,0,0,0.25);
+  background-color: springgreen;
+  transform: translateY(-3px);
+  border: 4px solid springgreen;
 }
