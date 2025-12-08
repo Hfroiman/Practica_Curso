@@ -4,7 +4,7 @@ import './Footer.css'
 const Footer = () => {
   return (
     <div className='footer'>
-        <a >© 2025 Hernan Froiman. Desarrollado con React js y CSS.</a>
+        <p>© 2025 Hernan Froiman. Desarrollado con React js y CSS.</p>
     </div>
   )
 }

@@ -15,6 +15,7 @@
     height: 75px;
     width: 1400px;
     position:fixed;
+    z-index: 9999;
 }
 
 .header-sections h3 {
@@ -31,7 +32,7 @@
 .header-btnera {
     display: flex;
     justify-content: space-between;
-    flex-direction: row-reverse;
+    flex-direction: row;
 }
 
 a {

@@ -10,9 +10,10 @@
 
 .groupcard .card {
     width: 20rem;
+    background-color: #4d4d61;
 }
 
-.groupcard .card-body {
+.groupcard .card-body2 {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -20,13 +21,41 @@
 
 .card-title{
     font-size: 25px;
+    color: rgb(240, 248, 255);
 }
 
-.card-body p {
+.card-body2 p {
     font-family: "Merriweather", serif;
     font-optical-sizing: auto;
     font-weight: 600;
     font-style: normal;
     font-variation-settings:
         "width" 100;
+    font-size: larger;
+    color: rgb(240, 248, 255);
+}
+
+.card-body2{
+    display: flex;
+    min-height: 330px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-body-logo{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 200px;
+    height: 50px;
+    margin-bottom: 12px;
+}
+
+.img-card{
+    height: 30px;
+    width: 40px;
+}
+
+.card-body-list{
+    width: 250px;
 }

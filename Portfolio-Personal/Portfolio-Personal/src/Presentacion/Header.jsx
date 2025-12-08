@@ -1,7 +1,4 @@
-import React from 'react'
 import './header.css';
-
-
 
 const Header = () => {
     return (
@@ -11,10 +8,9 @@ const Header = () => {
                     <h3>Froiman Hernan</h3>
                 </div>
                 <div className='header-btnera'>
-                    <a href="#" className="btnera-btn">contacto</a>
-                    <a href="#" className="btnera-btn">habilidades</a>
-                    <a href="#" className="btnera-btn">Presentacion</a>
-                    <a href="#" className="btnera-btn">Proyectos</a>
+                    <a href="#Proyectos" className="btnera-btn">Proyectos</a>
+                    <a href="#habilidades" className="btnera-btn">Habilidades</a>
+                    <a href='#contact' className="btnera-btn"> Contacto </a>
                 </div>
             </div>
         </div>
