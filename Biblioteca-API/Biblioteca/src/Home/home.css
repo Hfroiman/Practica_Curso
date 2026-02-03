@@ -1,0 +1,16 @@
+.home{
+    margin: 2rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.sections{
+    margin: 1rem;
+    width: 98%;
+    border: solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}

@@ -1,0 +1,39 @@
+.pr{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.presentation{
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: row;
+    width: 750px;
+    height: 25rem;
+    border: solid gray;
+}
+
+.section-image{
+    display: flex;
+    justify-content: center;
+    border-right: solid gray;
+}
+
+.section-image img{
+    margin: 10px;
+}
+
+.section-image-front{
+
+}
+
+.section-detail{
+    margin-left: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.section-detail h2{
+    margin-top: 20px;
+}

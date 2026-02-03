@@ -1,5 +1,8 @@
 import express from 'express'
 import Usermanager from './manager/usermanager.js';
+import { uservalidator } from './manager/userValidator.js';
+import { Uploader } from './Multer/multer.js';
+
 
 const usermanager = new Usermanager('./user.json');
 const app = express();
@@ -14,7 +17,7 @@ app.get('/users', async (req, res)=>{
     }
 })
 
-app.post('/users',async (req, res)=>{
+app.post('/users', uservalidator,async (req, res)=>{
     try {
         const user = await  usermanager.CreateUser(req.body)
         res.status(200).json(user)
@@ -47,5 +50,18 @@ app.put('/users/:iduser', async (req, res)=>{
     }
 })
 
+app.post('/users/profile', Uploader.single('profile'), async(res, req)=>{
+    try{
+        console.log(req.file);
+        const user =  req.body;
+        user.profile = req.file.path;
+        const usercreated = await usermanager.CreateUser(user);
+        res.json(usercreated);
+    }
+    catch (error) {
+        res.json({msg:error.message})
+    }
+})
+
 const PORT = 8080;
-app.listen(PORT, () => console.log('Server ok on port'));
+app.listen(PORT, () => console.log('Server ok on port ' + PORT));
