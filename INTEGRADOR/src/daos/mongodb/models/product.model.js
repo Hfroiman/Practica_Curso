@@ -11,4 +11,4 @@ const ProductSchema = new Schema({
     thumbnails:{type:[String]},//Es para las rutas donde estan almacenadas las imagenes del prod
 });
 
-export const ProductModel = model('product', ProductSchema);
+export const ProductModel = model('products', ProductSchema);

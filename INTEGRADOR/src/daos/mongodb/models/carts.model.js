@@ -1,13 +1,21 @@
 import { model, Schema } from "mongoose";
+import mongoosepaginate from "mongoose-paginate-v2"
 
 const CartsSchema = new Schema({
-    id:{type:String},
     product:[
-        {
-            id_product:{type:String, required:true},
-            quantity:{type:Number, default:1}
+        {   productId:
+            {
+                type: Schema.Types.ObjectId,
+                ref:'products'
+            },
+            quantity:{
+                type:Number,
+                default:1
+            }
         }
     ]
 });
+
+CartsSchema.plugin(mongoosepaginate);
 
 export const CartsModel = model('carts', CartsSchema);

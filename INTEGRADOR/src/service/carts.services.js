@@ -2,9 +2,9 @@ import CartsDaoMongoDb from '../daos/mongodb/carts.dao.js'
 const CartDao = new CartsDaoMongoDb();
 
 
-export const getall = async () =>{
+export const getall = async (page, limit) =>{
     try {
-        return await CartDao.getall()
+        return await CartDao.getall(page, limit);
     } catch (error) {
         throw new error(error);
     }
@@ -18,9 +18,9 @@ export const create = async (obj) =>{
     }
 }
 
-export const getbyid = async (id) =>{
+export const getbyid = async (cid) =>{
     try {
-        return await CartDao.getbyid(id);
+        return await CartDao.getbyid(cid);
     } catch (error) {
         throw new error(error);
     }
@@ -34,9 +34,26 @@ export const update = async (id, pid) =>{
     }
 }
 
-export const remove = async (id) =>{
+export const remove = async (cid) =>{
     try {
-        return await CartDao.remove(id);
+        return await CartDao.remove(cid);
+    } catch (error) {
+        throw new error(error);
+    }
+}
+
+//SEGUNDA ENTREGA
+export const removeSelect = async (cid, pid) =>{
+    try {
+        return await CartDao.removeSelect(cid, pid);
+    } catch (error) {
+        throw new error(error);
+    }
+}
+
+export const updatexSelect = async (cid, pid, cantselect) =>{
+    try {
+        return await CartDao.updatexSelect(cid, pid, cantselect);
     } catch (error) {
         throw new error(error);
     }
